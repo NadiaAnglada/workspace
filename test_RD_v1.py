@@ -231,13 +231,13 @@ plt.savefig("./conf_matrix_rf_op.jpg")
 
 
 ################################### Compare results with "duration" column for RF ######################################
-# fig1rf= plt.figure(figsize=(20,10))
-# sns.scatterplot(x=dur_test, hue=predictions_rf, y=y_test).set(title="Scatterplot_Duration_ytest_predictions_RF")
-# plt.savefig("./Scatterplot_duration_ytest_predictions_RF.jpg")
-#
-# fig2rf = plt.figure(figsize=(20, 10))
-# sns.displot(x=dur_test, y=predictions_rf, hue=y_test).set(title="Displot_duration_predictions_ytest_RF")
-# plt.savefig("./Displot_duration_predictions_ytest_RF.jpg")
+fig1rf= plt.figure(figsize=(20,10))
+sns.scatterplot(x=dur_test, hue=predictions_rf, y=y_test).set(title="Scatterplot_Duration_ytest_predictions_RF")
+plt.savefig("./Scatterplot_duration_ytest_predictions_RF.jpg")
+
+fig2rf = plt.figure(figsize=(20, 10))
+sns.displot(x=dur_test, y=predictions_rf, hue=y_test).set(title="Displot_duration_predictions_ytest_RF")
+plt.savefig("./Displot_duration_predictions_ytest_RF.jpg")
 
 
 plt.show()
